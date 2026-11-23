@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Fouzan CRM</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+<div class="lc">
+<div class="lg"><span class="mk">FC</span>Fouzan CRM</div>
+<h1>Welcome back</h1>
+<p class="s">Sign in to manage your contacts, deals and tasks.</p>
+<form id="lf" novalidate>
+<label>Email<input id="em" type="email" value="admin@fouzancrm.com" autocomplete="username"></label>
+<label>Password<input id="pw" type="password" value="Admin@123" autocomplete="current-password"></label>
+<p class="err" id="err"></p>
+<button class="btn p" type="submit" style="width:100%">Sign in</button>
+</form>
+<div class="demo"><b>Demo login</b><br>Email: <code>admin@fouzancrm.com</code><br>Password: <code>Admin@123</code></div>
+</div>
+</div>
+
+<div class="app" id="app" hidden>
+<aside>
+<div class="lg"><span class="mk">FC</span>Fouzan CRM</div>
+<button class="nv on" data-v="dashboard">▦ Dashboard</button>
+<button class="nv" data-v="contacts">☺ Contacts</button>
+<button class="nv" data-v="deals">◈ Deals</button>
+<button class="nv" data-v="tasks">✓ Tasks</button>
+<div class="sf"><button class="btn sm" data-act="logout" style="width:100%">Log out</button></div>
+</aside>
+<main>
+<div class="top"><h2 id="ttl"></h2><div class="who"><span>admin@fouzancrm.com</span><i>AD</i></div></div>
+<div id="view"></div>
+</main>
+</div>
+
+<div id="modal"><div id="mbox"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
